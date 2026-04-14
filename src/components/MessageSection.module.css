@@ -1,0 +1,140 @@
+.section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(250, 247, 252, 0.6) 0%, rgba(254, 240, 245, 0.6) 100%);
+  z-index: -1;
+}
+
+.stickersContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1000px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.mainTitle {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 400;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+}
+
+.loader {
+  text-align: center;
+  padding: 40px;
+  color: #9B8FA8;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 40px;
+}
+
+.screensContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.screenCard {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  padding: 25px;
+  border: 1px solid rgba(255, 182, 217, 0.2);
+  box-shadow: 0 10px 40px rgba(201, 159, 227, 0.1);
+  transition: all 0.3s ease;
+}
+
+.screenCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(201, 159, 227, 0.2);
+}
+
+.cardNumber {
+  background: linear-gradient(135deg, #FFB6D9 0%, #C99FE3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.cardLocation {
+  background: rgba(201, 159, 227, 0.15);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  color: #9B8FA8;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.screenTitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #C99FE3;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.screenText {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 16px;
+    min-height: auto;
+  }
+
+  .screensContainer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .screenCard {
+    padding: 20px;
+  }
+
+  .screenTitle {
+    font-size: 1.2rem;
+  }
+
+  .screenText {
+    font-size: 0.95rem;
+  }
+}

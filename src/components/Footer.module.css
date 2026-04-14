@@ -1,0 +1,132 @@
+.footer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(254, 245, 240, 0.9) 0%, rgba(250, 247, 252, 0.9) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 60% 40%, rgba(255, 182, 217, 0.1) 0%, transparent 50%);
+  z-index: 0;
+}
+
+.content {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: clamp(100px, 25vw, 200px);
+  height: auto;
+  filter: drop-shadow(0 8px 20px rgba(201, 159, 227, 0.2));
+  object-fit: contain;
+}
+
+.finalText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cta {
+  font-size: clamp(1rem, 3vw, 1.1rem);
+  color: #4a4a4a;
+  line-height: 1.8;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.wishes {
+  font-size: clamp(1rem, 3vw, 1.1rem);
+  color: #4a4a4a;
+  line-height: 1.8;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.message {
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
+  color: #C99FE3;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.note {
+  font-size: clamp(0.95rem, 3vw, 1.05rem);
+  color: #9B8FA8;
+  line-height: 1.8;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  font-style: italic;
+}
+
+.signature {
+  font-size: clamp(1.3rem, 5vw, 1.6rem);
+  color: #FFB6D9;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.tagline {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #C99FE3;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 40px 16px;
+    min-height: auto;
+  }
+
+  .content {
+    gap: 30px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .finalText {
+    gap: 20px;
+  }
+
+  .message {
+    margin-top: 5px;
+  }
+
+  .signature {
+    margin-top: 15px;
+  }
+
+  .tagline {
+    margin-top: 8px;
+  }
+}

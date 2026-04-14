@@ -36,9 +36,9 @@ function VideoSection() {
           <video
             controls
             className={styles.video}
-            poster="/uk.png"
+            poster="./uk.png"
           >
-            <source src="/congratulations.mp4" type="video/mp4" />
+            <source src="./congratulations.mp4" type="video/mp4" />
             Ваш браузер не поддерживает видео
           </video>
         </motion.div>

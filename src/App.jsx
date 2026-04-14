@@ -27,7 +27,7 @@ function App() {
   return (
     <div className={styles.app}>
       <audio ref={audioRef} loop>
-        <source src="/song.m4a" type="audio/mp4" />
+        <source src="./song.m4a" type="audio/mp4" />
       </audio>
 
       {!hasStarted && <StartScreen onStart={handleStart} />}

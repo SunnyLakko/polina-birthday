@@ -33,7 +33,7 @@ function Footer() {
     >
       <motion.div className={styles.content} variants={itemVariants}>
         <motion.div className={styles.logoContainer} variants={itemVariants}>
-          <img src="/logo.png" alt="Logo" className={styles.logo} />
+          <img src="./logo.png" alt="Logo" className={styles.logo} />
         </motion.div>
 
         <motion.div className={styles.finalText} variants={itemVariants}>

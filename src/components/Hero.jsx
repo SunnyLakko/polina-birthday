@@ -32,7 +32,7 @@ function Hero() {
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div className={styles.imageContainer} variants={itemVariants}>
-        <img src="/uk.png" alt="Lee Dong-uk" className={styles.image} />
+        <img src="./uk.png" alt="Lee Dong-uk" className={styles.image} />
       </motion.div>
 
       <motion.div className={styles.subtitle} variants={itemVariants}>

@@ -43,7 +43,7 @@ function Sticker({ i, index }) {
       whileHover="hover"
       variants={levitateVariants}
     >
-      <img src={`/stick${i}.png`} alt={`sticker-${index}`} />
+      <img src={`./stick${i}.png`} alt={`sticker-${index}`} />
     </motion.div>
   )
 }
